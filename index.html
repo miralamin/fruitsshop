@@ -31,28 +31,31 @@
     <div class="p-0 lg:p-4 bg-none lg:bg-orange-500 sm:rounded-full mx-4 lg:mx-60">
         <div class="flex flex-row-reverse lg:flex-row justify-between items-center px-0 lg:px-5">
 
-            <!-- Hamburger Menu -->
-            <div class="lg:hidden ">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52 mr-10 items-center absolute right-3">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
+<!-- Hamburger Menu -->
+<div class="lg:hidden ">
+    <div class="drawer lg:drawer-open">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col items-center justify-center">
+          <!-- Page content here -->
+          <label for="my-drawer-2" class="btn btn-primary bg-transparent text-black border-none drawer-button lg:hidden z-100"><i class="fa-solid fa-bars"></i></label>
+        
+        </div> 
+        <div class="drawer-side z-10">
+          <label for="my-drawer-2" class="drawer-overlay "></label> 
+          <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+            <!-- Sidebar content here -->
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        
+        </div>
+      </div>
+</div>
 
 
 
-            </div>
 
             <!-- Left Menu for desktop -->
             <div class="hidden lg:flex">
@@ -183,23 +186,23 @@
             class="hidden lg:flex justify-center space-x-8 gap-16 p-4 mx-72 bg-white rounded-xl shadow-md relative -top-24">
             <div class="text-center">
                 <img src="/images/fruit1.png" alt="Image 1" class="w-36 h-28 object-cover">
-                <p class="text-sm">Caption 1</p>
+                <p class="text-sm">Grapes</p>
             </div>
             <div class="text-center">
                 <img src="/images/fruit2.png" alt="Image 2" class="w-36 h-28 object-cover">
-                <p class="text-sm">Caption 2</p>
+                <p class="text-sm">Orange</p>
             </div>
             <div class="text-center">
                 <img src="/images/fruit3.png" alt="Image 3" class="w-36 h-28 object-cover">
-                <p class="text-sm">Caption 3</p>
+                <p class="text-sm">Mango</p>
             </div>
             <div class="text-center">
                 <img src="/images/fruit4.png" alt="Image 4" class="w-36 h-28 object-cover">
-                <p class="text-sm">Caption 4</p>
+                <p class="text-sm">Strawberry</p>
             </div>
             <div class="text-center">
                 <img src="/images/fruit5.png" alt="Image 5" class="w-36 h-28 object-cover">
-                <p class="text-sm">Caption 5</p>
+                <p class="text-sm">Mango</p>
             </div>
         </div>
 
